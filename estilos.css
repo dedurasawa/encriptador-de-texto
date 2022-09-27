@@ -1,0 +1,129 @@
+/*aplique de color a todo el viewport*/
+body{ 
+	background-color: #dfefff;
+}
+
+/*edicion de la cabecera*/
+.cabecera{
+	display: inline-block;
+
+}
+
+.titulo{
+	display: inline-block;
+	margin: 15px 25px;
+	font-family: Lato,sans-serif;
+	color: #000099;
+}
+ 
+ /*edicion del cuerpo de la pagina: 1_cajas de texto */
+.encriptador{
+	margin-top: 20px;
+}
+
+
+.enc_text{
+	width: 600px;
+	height: 400px;
+	margin-left: 150px;
+	border: none;
+	resize: none;
+	outline: none;
+	background-color: #dfefff;
+	font-size: 1.3em;
+	font-family: Oswald,sans-serif;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+
+/*el texto desencriptado aparece en el aside de la pagina*/
+.desencriptado{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 300px;
+	height: 600px;
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	background-color: #ffffff;
+	border-radius: 15px;
+
+}
+
+.desencriptado p{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	padding: 5px;
+	font-family: Oswald,sans-serif;
+	font-size: 1.2em;
+}
+
+.desencriptado img{
+	width: 40%;
+
+}
+
+.btn_copiar{
+	width: 200px;
+	height: 40px;
+	font-family: Lato,sans-serif;
+	letter-spacing: 2px;
+}
+.formato{
+display: inline-block;
+margin-left: 280px;
+margin-bottom: 3px;
+font-family: Lato,sans-serif;
+color: #015380;
+}
+
+.formato p img{
+	margin-right: 2px;
+	width: 15px;
+}
+
+.botones input{
+	width: 200px;
+	height: 50px;
+	font-family: Lato,sans-serif;
+}
+
+.btn_encriptar{
+	margin-left: 280px;
+	border-style: none;
+	border-radius: 5px;
+	background-color: #015380;
+	color: #ffffff;
+}
+
+.btn_encriptar:hover{
+	background-color: #2375A2;
+}
+
+.btn_desencriptar{
+	margin-left: 30px;
+	border-style: none;
+	border-radius: 5px;
+	background-color: #A7DDFB;
+	color: #015380;
+}
+
+.btn_desencriptar:hover{
+	background-color: #8DD5FC;
+}
+
+.footer{
+	background-color: #015380;
+	margin-top: 25px;
+	padding: 15px 0 15px 60px;
+}
+
+.footer h3{
+	font-family: Lato,sans-serif;
+	color: #ffffff;
+}
+
+
