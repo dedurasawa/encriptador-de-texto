@@ -46,34 +46,34 @@ function encriptar() {
 
 function desencriptar() {
 
-	let arrayTexto = Array.from(textoNormal.value)
+	let arrayTexto1 = Array.from(textoNormal.value)
 
-	for (var i = 0; i < arrayTexto.length; i++) {
+	for (var i = 0; i < arrayTexto1.length; i++) {
 
-		if (arrayTexto[i] == "a,i") {
-			arrayTexto.splice(i, 2, "a");
+		if (arrayTexto1[i] == "a") {
+			arrayTexto1.splice(i, 2, "a");
 		}
-		else if (arrayTexto[i] == "e,n,t,e,r") {
-			arrayTexto.splice(i, 5, "e")
+		else if (arrayTexto1[i] == "e") {
+			arrayTexto1.splice(i, 5, "e")
 		}
-		else if (arrayTexto[i] == "i,m,e,s") {
-			arrayTexto.splice(i, 3, "i")
+		else if (arrayTexto1[i] == "i") {
+			arrayTexto1.splice(i, 4, "i")
 		}
-		else if (arrayTexto[i] == "o,v,e,r") {
-			arrayTexto.splice(i, 4, "o")
+		else if (arrayTexto1[i] == "o") {
+			arrayTexto1.splice(i, 4, "o")
 		}
-		else if (arrayTexto[i] == "u,f,a,t") {
-			arrayTexto.splice(i, 4, "u")
+		else if (arrayTexto1[i] == "u") {
+			arrayTexto1.splice(i, 4, "u")
 		}				
 	}
 
-	console.log(arrayTexto)
+	console.log(arrayTexto1)
 	
 
-	 let string = arrayTexto.toString();
-	 string01 = string.replace(/(,)/gm,"");
-	console.log(string01)
-	encriptado.innerHTML = string01
+	 let string01 = arrayTexto1.toString();
+	 string02 = string01.replace(/(,)/gm,"");
+	console.log(string02)
+	encriptado.innerHTML = string02
 	return encriptado.value;
 	
 }
