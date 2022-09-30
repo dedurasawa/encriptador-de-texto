@@ -1,13 +1,14 @@
 
 
 
-let textoNormal = document.getElementById("textarea");
-let encriptado = document.getElementById("texto_encriptado");
+let textoNormal = document.getElementById("textarea"); //etiqueta donde esta el mensaje a encriptar
+let encriptado = document.getElementById("texto_encriptado"); //etiqueta donde aparece el mensaje encriptado y desencriptado
 let botonEnc = document.getElementById("btn_encriptar"); //botonEnc y botonDes hacen referencia a los botones de encriptado y desencriptado respectivamente//
 let botonDes = document.getElementById("btn_desencriptar");
 let copiar = document.getElementById("btn_copiar") ;//boton que copia el mensaje encriptado
 let imagen = document.getElementById("img_desencriptado"); //imagen que va a desaparecer cuando aparezca el mensaje encriptado
 
+	
 
 function copiado() {
 	let textoCopia = encriptado.innerHTML;
@@ -15,7 +16,9 @@ function copiado() {
 }
 
 function encriptar() {
-	
+
+	encriptado.style.display = "inline-block"
+
 	let arrayTexto = Array.from(textoNormal.value);
 
 	for (var i = 0; i < arrayTexto.length; i++) {
@@ -41,10 +44,14 @@ function encriptar() {
 	string01 = string.replace(/(,)/gm,"");
 	encriptado.innerHTML = string01;
 	return encriptado.value;
+
+
 	
 }
 
 function desencriptar() {
+
+	encriptado.style.display = "inline-block"
 
 	let arrayTexto1 = Array.from(textoNormal.value);
 
