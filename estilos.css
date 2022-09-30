@@ -53,12 +53,13 @@ body{
 }
 
 .desencriptado p{
-	display: inline-block;
+	display: none;
 	width: 200px;
 	height: 200px;
 	padding: 5px;
 	font-family: Oswald,sans-serif;
 	font-size: 1.2em;
+	transition: all 1s;
 }
 
 .desencriptado img{
