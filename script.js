@@ -18,6 +18,7 @@ function copiado() {
 function encriptar() {
 
 	encriptado.style.display = "inline-block"
+	imagen.style.display = "none"
 
 	let arrayTexto = Array.from(textoNormal.value);
 
@@ -45,13 +46,12 @@ function encriptar() {
 	encriptado.innerHTML = string01;
 	return encriptado.value;
 
-
-	
 }
 
 function desencriptar() {
 
 	encriptado.style.display = "inline-block"
+	imagen.style.display = "none"
 
 	let arrayTexto1 = Array.from(textoNormal.value);
 
@@ -78,7 +78,7 @@ function desencriptar() {
 	string02 = stringDes.replace(/(,)/gm,"");
 	encriptado.innerHTML = string02;
 	return encriptado.value;
-	
+
 }
 
 botonEnc.onclick = encriptar;
