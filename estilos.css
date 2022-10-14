@@ -128,3 +128,52 @@ color: #015380;
 }
 
 
+
+
+
+/*diseño responsivo*/
+
+
+@media(max-width : 940px) {
+	.global {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.enc_text {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.formato {
+		margin-left: 0;
+	}
+
+	.botones input {
+		width: 100%;
+	}
+
+	.btn_encriptar {
+		margin-left: 0;
+	}
+
+	.btn_desencriptar {
+		margin-left: 0;
+	}
+
+	.desencriptado {
+		justify-content: flex-start;
+		width: 100%;
+		height: 100%;
+		position: inherit;
+		order: 4;
+		margin-top: 20px;
+	}
+
+	.caja_texto {
+		width: 100%;
+		height: 200px;
+	}
+}
+
+
