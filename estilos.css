@@ -52,14 +52,14 @@ body{
 
 }
 
-.desencriptado p{
+.caja_texto{
 	display: none;
+	overflow: auto;
 	width: 200px;
-	height: 200px;
+	height: 400px;
 	padding: 5px;
 	font-family: Oswald,sans-serif;
 	font-size: 1.2em;
-	transition: all 1s;
 }
 
 .desencriptado img{
